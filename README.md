@@ -1,11 +1,13 @@
 Description
+
 ..........................................................................................................................................................................................................................
 
 This .NET console application implements an advanced version of the classic Rock-Paper-Scissors game. It supports an arbitrary odd number of moves, allowing for more complex gameplay such as Rock-Paper-Scissors-Lizard-Spock. The game ensures fair play through the use of cryptographic techniques, generating a random move and calculating its HMAC (Hash-based Message Authentication Code) before the user makes their move. This way, the integrity of the computer's move is verifiable.
 
 
 Features
-..........................................................................................................................................................................................................................
+
+...........................................................................................................................................................................................................................
 
     Flexible Move Sets: Accepts an odd number (≥ 3) of non-repeating strings as moves.
     Cryptographic Integrity: Uses a cryptographically secure random key to generate an HMAC for the computer's move.
@@ -15,6 +17,7 @@ Features
 
 
 How to Play
+
 ...........................................................................................................................................................................................................................
 
     Start the Game: Run the game with command line arguments specifying the moves.
@@ -25,11 +28,15 @@ How to Play
 
 
 Example Usage
+
 ...........................................................................................................................................................................................................................
 
 dotnet run -- rock Spock paper lizard scissors
 
+
+
 Output:
+
 ...........................................................................................................................................................................................................................
 
 HMAC: 9ED68097B2D5D9A968E85BD7094C75D00F96680DC43CDD6918168A8F50DE8507
@@ -46,6 +53,8 @@ Your move: paper
 Computer move: rock
 You win!
 HMAC key: BD9BE48334BB9C5EC263953DA54727F707E95544739FCE7359C267E734E380A2
+
+
 ...........................................................................................................................................................................................................................
 This project showcases the use of .NET for building interactive console applications with a focus on security and fair play through cryptographic methods.
 ...........................................................................................................................................................................................................................
